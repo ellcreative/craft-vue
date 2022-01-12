@@ -1,7 +1,7 @@
 {
-  "name": "REPONAME",
+  "name": "craftvue",
   "version": "1.0.0",
-  "description": "REPONAME",
+  "description": "craftvue",
   "author": "Pennebaker",
   "private": true,
   "scripts": {

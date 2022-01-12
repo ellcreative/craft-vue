@@ -1,9 +1,9 @@
 module.exports = {
   apps: [
     {
-      name: 'REPONAME-dev',
+      name: 'craftvue-dev',
       instances: 1,
-      script: './node_modules/.bin/REPONAME',
+      script: './node_modules/.bin/craftvue',
       args: 'start --port 3201',
     },
   ],
