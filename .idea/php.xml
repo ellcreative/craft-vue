@@ -254,6 +254,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/mmikkel/cp-field-inspect" />
       <path value="$PROJECT_DIR$/backend/vendor/cakephp/utility" />
       <path value="$PROJECT_DIR$/backend/vendor/hashids/hashids" />
+      <path value="$PROJECT_DIR$/backend/vendor/verbb/vizy" />
+      <path value="$PROJECT_DIR$/backend/vendor/yii2mod/yii2-array-query" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

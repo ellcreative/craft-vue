@@ -105,6 +105,8 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/yiisoft/yii2-swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/frontend/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/verbb/vizy" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/yii2mod/yii2-array-query" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
