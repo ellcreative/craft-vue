@@ -1,166 +1,22 @@
-dateModified: 1596458947
+dateModified: 1642090085
 email:
-  fromEmail: spenser@pennebaker.com
+  fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
-  replyToEmail: null
-  template: ''
-  transportSettings:
-    encryptionMethod: tls
-    host: $SMTP_HOST
-    password: $SMTP_PASS
-    port: $SMTP_PORT
-    timeout: '10'
-    useAuthentication: '1'
-    username: $SMTP_USER
-  transportType: craft\mail\transportadapters\Smtp
-plugins:
-  architect:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-  aws-s3:
-    edition: standard
-    enabled: true
-    schemaVersion: '1.2'
-  freeform:
-    edition: pro
-    enabled: true
-    schemaVersion: 3.0.7
-    settings:
-      ajaxByDefault: false
-      autoScrollToErrors: true
-      blockedEmails: ''
-      blockedEmailsError: 'Invalid Email Address'
-      blockedIpAddresses: ''
-      blockedKeywords: ''
-      blockedKeywordsError: 'Invalid Entry Data'
-      customErrorMessage: ''
-      customHoneypotName: ''
-      defaultTemplates: true
-      defaultView: dashboard
-      emailTemplateDirectory: null
-      emailTemplateStorage: db
-      fieldDisplayOrder: name
-      fillWithGet: false
-      footerScripts: false
-      formSubmitDisable: false
-      formSubmitExpiration: ''
-      formTemplateDirectory: null
-      formattingTemplate: flexbox.html
-      freeformHoneypot: ''
-      freeformHoneypotEnhancement: ''
-      hideBannerDemo: true
-      hideBannerOldFreeform: false
-      minimumSubmitTime: ''
-      pluginName: null
-      purgableSpamAgeInDays: '0'
-      purgableSubmissionAgeInDays: null
-      recaptchaBehaviour: display_error
-      recaptchaEnabled: false
-      recaptchaKey: null
-      recaptchaMinScore: 0.5
-      recaptchaSecret: null
-      recaptchaType: v2_checkbox
-      removeNewlines: false
-      renderFormHtmlInCpViews: true
-      salesforce_client_id: null
-      salesforce_client_secret: null
-      salesforce_password: null
-      salesforce_username: null
-      scriptInsertLocation: footer
-      sessionEntryMaxCount: 50
-      sessionEntryTTL: 10800
-      showErrorsForBlockedEmails: ''
-      showErrorsForBlockedKeywords: ''
-      showTutorial: false
-      spamFolderEnabled: '1'
-      spamProtectionBehaviour: simulate_success
-      submissionThrottlingCount: ''
-      submissionThrottlingTimeFrame: m
-  image-optimize:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      allowUpScaledImageVariants: false
-      assetVolumeSubFolders: true
-      autoSharpenScaledImages: true
-      createColorPalette: true
-      createPlaceholderSilhouettes: true
-      imageTransformTypeSettings:
-        __assoc__:
-          -
-            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
-            -
-              __assoc__:
-                -
-                  - domain
-                  - ''
-                -
-                  - apiKey
-                  - ''
-                -
-                  - securityToken
-                  - ''
-          -
-            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - $SHARP_DISTRIBUTION_ID
-          -
-            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - ''
-                -
-                  - securityKey
-                  - ''
-                -
-                  - includeBucketPrefix
-                  - ''
-      lowerQualityRetinaImageVariants: true
-      transformClass: nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-  neo:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
-  redactor-custom-styles:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  rich-variables:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.0.9
-  similar:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  webperf:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    76566381-39cb-4a0a-979e-9ba75b430b12: Common # Common
+    e06c8337-4b69-45aa-95f7-d6faf18148c0: Nuxt # Nuxt
+    e50799a7-aaec-4292-8d59-1231573c09c0: Nuxt # Nuxt
 system:
-  edition: pro
+  edition: solo
   live: true
-  name: $SYSTEM_NAME
-  schemaVersion: 3.5.12
+  name: Nuxt
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
   defaultGroup: null
-  photoSubpath: ''
+  photoSubpath: null
   photoVolumeUid: null
   requireEmailVerification: true
