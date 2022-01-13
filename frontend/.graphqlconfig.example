@@ -4,11 +4,11 @@
   "extensions": {
     "endpoints": {
       "dev": {
-        "name": "dev (http://api-craftvue.test)",
-        "url": "http://api-craftvue.test",
+        "name": "dev (http://api-craftvue.nitro)",
+        "url": "http://api-craftvue.nitro",
         "headers": {
           "user-agent": "JS GraphQL",
-          "Authorization": "Bearer CRAFT_GRAPHQL_TOKEN"
+          "Authorization": "Bearer czhm23589yvt4U3W-ooc_UQc9O02tHl1"
         },
         "introspect": true
       }
