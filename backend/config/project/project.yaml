@@ -1,4 +1,4 @@
-dateModified: 1642090085
+dateModified: 1642105009
 email:
   fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
@@ -6,12 +6,15 @@ email:
 meta:
   __names__:
     76566381-39cb-4a0a-979e-9ba75b430b12: Common # Common
+    b3e1d1ca-562d-48d1-9935-82d27aa939d9: 'Public Schema' # Public Schema
     e06c8337-4b69-45aa-95f7-d6faf18148c0: Nuxt # Nuxt
+    e9cad64a-269f-458b-983e-4f839f117801: Frontend # Frontend
     e50799a7-aaec-4292-8d59-1231573c09c0: Nuxt # Nuxt
 system:
-  edition: solo
+  edition: pro
   live: true
-  name: Nuxt
+  name: $SYSTEM_NAME
+  retryDuration: null
   schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
