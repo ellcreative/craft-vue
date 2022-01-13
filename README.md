@@ -7,7 +7,7 @@ In order to spin up this repo, you need to spin up both the back end and the fro
 ### BACKEND Setup
 1. cd to `backend`
 2. `nitro add`
-   Enter the hostname [backend.nitro]: api-REPONAME.nitro
+   Enter the hostname [backend.nitro]: api-craftvue.nitro
    Enter the web root for the site [web]:
    Choose a PHP version:
 1. 8.0
@@ -22,7 +22,7 @@ In order to spin up this repo, you need to spin up both the back end and the fro
 7. mysql-5.7-3306.database.nitro
 8. postgres-13-5432.database.nitro
    Enter your selection: 1
-   Enter the new database name: REPONAME_db_dev
+   Enter the new database name: craftvue_db_dev
    Should we update the env file? [y/N] n
    Apply changes now [Y/n]? y
 4. `nitro composer install`
