@@ -1,2 +1,11 @@
 isPublic: false
 name: Frontend
+scope:
+  - 'sections.a19a9d6a-7e70-4dd0-b337-7fc490c001ec:read' # Pages
+  - 'entrytypes.12c7facb-5f44-4a34-a722-5152910e42d2:read' # Page
+  - 'freeformForms.all:read'
+  - 'navigationNavs.all:read'
+  - 'navigationNavs.21c395ab-0cfe-4302-b582-b40c41f0ce69:read' # Main
+  - 'retour.all:read'
+  - 'seomatic.all:read'
+  - 'formieForms.all:read'

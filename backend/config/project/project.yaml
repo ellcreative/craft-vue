@@ -1,4 +1,4 @@
-dateModified: 1642194679
+dateModified: 1642200784
 email:
   fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
@@ -6,6 +6,7 @@ email:
 meta:
   __names__:
     12c7facb-5f44-4a34-a722-5152910e42d2: Page # Page
+    21c395ab-0cfe-4302-b582-b40c41f0ce69: Main # Main
     76566381-39cb-4a0a-979e-9ba75b430b12: Common # Common
     a19a9d6a-7e70-4dd0-b337-7fc490c001ec: Pages # Pages
     b3e1d1ca-562d-48d1-9935-82d27aa939d9: 'Public Schema' # Public Schema
@@ -84,6 +85,51 @@ plugins:
     enabled: true
     licenseKey: 3KFFKI3D1J79JB6JLFFR55WZ
     schemaVersion: 3.0.11
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: true
+      enableMetaContainerEndpoint: true
+      enableSeoFileLinkEndpoint: true
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 'null'
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: '1'
+      truncateTitleTags: '1'
   similar:
     edition: standard
     enabled: true
