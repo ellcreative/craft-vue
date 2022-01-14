@@ -1,15 +1,115 @@
-dateModified: 1642105009
+dateModified: 1642194679
 email:
   fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    12c7facb-5f44-4a34-a722-5152910e42d2: Page # Page
     76566381-39cb-4a0a-979e-9ba75b430b12: Common # Common
+    a19a9d6a-7e70-4dd0-b337-7fc490c001ec: Pages # Pages
     b3e1d1ca-562d-48d1-9935-82d27aa939d9: 'Public Schema' # Public Schema
+    cc0d7245-f9a3-4fa5-be24-2c18a3535146: New # New
     e06c8337-4b69-45aa-95f7-d6faf18148c0: Nuxt # Nuxt
     e9cad64a-269f-458b-983e-4f839f117801: Frontend # Frontend
     e50799a7-aaec-4292-8d59-1231573c09c0: Nuxt # Nuxt
+    e97237b2-ce7a-444a-863b-bd1fd92322ae: 'Contact Form' # Contact Form
+plugins:
+  cloner:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.7
+    settings:
+      originalNavHash:
+        __assoc__:
+          -
+            - ae9bb02b-549b-45ad-8df0-88aeaae241dd
+            - W3sibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJkYXNoYm9hcmQiLCJmb250SWNvbiI6ImdhdWdlIn0seyJsYWJlbCI6IkVudHJpZXMiLCJ1cmwiOiJlbnRyaWVzIiwiZm9udEljb24iOiJzZWN0aW9uIn0seyJsYWJlbCI6IlVzZXJzIiwidXJsIjoidXNlcnMiLCJmb250SWNvbiI6InVzZXJzIn0seyJsYWJlbCI6IkZlZWQgTWUiLCJ1cmwiOiJmZWVkLW1lIiwiaWNvbiI6Ii9hcHAvdmVuZG9yL2NyYWZ0Y21zL2ZlZWQtbWUvc3JjL2ljb24tbWFzay5zdmcifSx7ImxhYmVsIjoiRmllbGQgTWFuYWdlciIsInVybCI6ImZpZWxkLW1hbmFnZXIiLCJpY29uIjoiL2FwcC92ZW5kb3IvdmVyYmIvZmllbGQtbWFuYWdlci9zcmMvaWNvbi1tYXNrLnN2ZyJ9LHsibGFiZWwiOiJGb3JtaWUiLCJ1cmwiOiJmb3JtaWUiLCJpY29uIjoiL2FwcC92ZW5kb3IvdmVyYmIvZm9ybWllL3NyYy9pY29uLW1hc2suc3ZnIiwic3VibmF2Ijp7ImZvcm1zIjp7ImxhYmVsIjoiRm9ybXMiLCJ1cmwiOiJmb3JtaWUvZm9ybXMifSwic3VibWlzc2lvbnMiOnsibGFiZWwiOiJTdWJtaXNzaW9ucyIsInVybCI6ImZvcm1pZS9zdWJtaXNzaW9ucyJ9LCJzZW50Tm90aWZpY2F0aW9ucyI6eyJsYWJlbCI6IlNlbnQgTm90aWZpY2F0aW9ucyIsInVybCI6ImZvcm1pZS9zZW50LW5vdGlmaWNhdGlvbnMifSwic2V0dGluZ3MiOnsibGFiZWwiOiJTZXR0aW5ncyIsInVybCI6ImZvcm1pZS9zZXR0aW5ncyJ9fX0seyJsYWJlbCI6IkZyZWVmb3JtIiwidXJsIjoiZnJlZWZvcm0iLCJpY29uIjoiL2FwcC92ZW5kb3Ivc29sc3BhY2UvY3JhZnQtZnJlZWZvcm0vcGFja2FnZXMvcGx1Z2luL3NyYy9pY29uLW1hc2suc3ZnIiwic3VibmF2Ijp7ImRhc2hib2FyZCI6eyJsYWJlbCI6IkRhc2hib2FyZCIsInVybCI6ImZyZWVmb3JtL2Rhc2hib2FyZCJ9LCJzdWJtaXNzaW9ucyI6eyJsYWJlbCI6IlN1Ym1pc3Npb25zIiwidXJsIjoiZnJlZWZvcm0vc3VibWlzc2lvbnMifSwic3BhbSI6eyJsYWJlbCI6IlNwYW0iLCJ1cmwiOiJmcmVlZm9ybS9zcGFtIn0sImZvcm1zIjp7ImxhYmVsIjoiRm9ybXMiLCJ1cmwiOiJmcmVlZm9ybS9mb3JtcyJ9LCJmaWVsZHMiOnsibGFiZWwiOiJGaWVsZHMiLCJ1cmwiOiJmcmVlZm9ybS9maWVsZHMifSwibm90aWZpY2F0aW9ucyI6eyJsYWJlbCI6IkVtYWlsIE5vdGlmaWNhdGlvbnMiLCJ1cmwiOiJmcmVlZm9ybS9ub3RpZmljYXRpb25zIn0sInNldHRpbmdzIjp7ImxhYmVsIjoiU2V0dGluZ3MiLCJ1cmwiOiJmcmVlZm9ybS9zZXR0aW5ncyJ9LCJyZXNvdXJjZXMiOnsibGFiZWwiOiJSZXNvdXJjZXMiLCJ1cmwiOiJmcmVlZm9ybS9yZXNvdXJjZXMifX19LHsibGFiZWwiOiJOYXZpZ2F0aW9uIiwidXJsIjoibmF2aWdhdGlvbiIsImljb24iOiIvYXBwL3ZlbmRvci92ZXJiYi9uYXZpZ2F0aW9uL3NyYy9pY29uLW1hc2suc3ZnIn0seyJsYWJlbCI6IlJldG91ciIsInVybCI6InJldG91ciIsImljb24iOiIvYXBwL3ZlbmRvci9ueXN0dWRpbzEwNy9jcmFmdC1yZXRvdXIvc3JjL2ljb24tbWFzay5zdmciLCJzdWJuYXYiOnsiZGFzaGJvYXJkIjp7ImxhYmVsIjoiRGFzaGJvYXJkIiwidXJsIjoicmV0b3VyL2Rhc2hib2FyZCJ9LCJyZWRpcmVjdHMiOnsibGFiZWwiOiJSZWRpcmVjdHMiLCJ1cmwiOiJyZXRvdXIvcmVkaXJlY3RzIn0sInNldHRpbmdzIjp7ImxhYmVsIjoiU2V0dGluZ3MiLCJ1cmwiOiJyZXRvdXIvc2V0dGluZ3MifX19LHsibGFiZWwiOiJTRU9tYXRpYyIsInVybCI6InNlb21hdGljIiwiaWNvbiI6Ii9hcHAvdmVuZG9yL255c3R1ZGlvMTA3L2NyYWZ0LXNlb21hdGljL3NyYy9pY29uLW1hc2suc3ZnIiwic3VibmF2Ijp7ImRhc2hib2FyZCI6eyJsYWJlbCI6IkRhc2hib2FyZCIsInVybCI6InNlb21hdGljL2Rhc2hib2FyZCJ9LCJnbG9iYWwiOnsibGFiZWwiOiJHbG9iYWwgU0VPIiwidXJsIjoic2VvbWF0aWMvZ2xvYmFsL2dlbmVyYWwifSwiY29udGVudCI6eyJsYWJlbCI6IkNvbnRlbnQgU0VPIiwidXJsIjoic2VvbWF0aWMvY29udGVudCJ9LCJzaXRlIjp7ImxhYmVsIjoiU2l0ZSBTZXR0aW5ncyIsInVybCI6InNlb21hdGljL3NpdGUvaWRlbnRpdHkifSwidHJhY2tpbmciOnsibGFiZWwiOiJUcmFja2luZyBTY3JpcHRzIiwidXJsIjoic2VvbWF0aWMvdHJhY2tpbmcvZ3RhZyJ9LCJwbHVnaW4iOnsibGFiZWwiOiJQbHVnaW4gU2V0dGluZ3MiLCJ1cmwiOiJzZW9tYXRpYy9wbHVnaW4ifX19LHsibGFiZWwiOiJXZWJwZXJmIiwidXJsIjoid2VicGVyZiIsImljb24iOiIvYXBwL3ZlbmRvci9ueXN0dWRpbzEwNy9jcmFmdC13ZWJwZXJmL3NyYy9pY29uLW1hc2suc3ZnIiwiYmFkZ2VDb3VudCI6IiIsInN1Ym5hdiI6eyJkYXNoYm9hcmQiOnsibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJ3ZWJwZXJmL2Rhc2hib2FyZCJ9LCJwZXJmb3JtYW5jZSI6eyJsYWJlbCI6IlBlcmZvcm1hbmNlIiwidXJsIjoid2VicGVyZi9wZXJmb3JtYW5jZSJ9LCJlcnJvcnMiOnsibGFiZWwiOiJFcnJvcnMgIiwidXJsIjoid2VicGVyZi9lcnJvcnMiLCJiYWRnZSI6IiJ9LCJzZXR0aW5ncyI6eyJsYWJlbCI6IlNldHRpbmdzIiwidXJsIjoid2VicGVyZi9zZXR0aW5ncyJ9fX0seyJsYWJlbCI6IkdyYXBoUUwiLCJ1cmwiOiJncmFwaHFsIiwiaWNvbiI6IkBhcHBpY29ucy9ncmFwaHFsLnN2ZyIsInN1Ym5hdiI6eyJzY2hlbWFzIjp7ImxhYmVsIjoiU2NoZW1hcyIsInVybCI6ImdyYXBocWwvc2NoZW1hcyJ9LCJ0b2tlbnMiOnsibGFiZWwiOiJUb2tlbnMiLCJ1cmwiOiJncmFwaHFsL3Rva2VucyJ9LCJncmFwaGlxbCI6eyJsYWJlbCI6IkdyYXBoaVFMIiwidXJsIjoiZ3JhcGhpcWwiLCJleHRlcm5hbCI6dHJ1ZX19fSx7InVybCI6InV0aWxpdGllcyIsImxhYmVsIjoiVXRpbGl0aWVzIiwiZm9udEljb24iOiJ0b29sIiwiYmFkZ2VDb3VudCI6MH0seyJ1cmwiOiJzZXR0aW5ncyIsImxhYmVsIjoiU2V0dGluZ3MiLCJmb250SWNvbiI6InNldHRpbmdzIn0seyJ1cmwiOiJwbHVnaW4tc3RvcmUiLCJsYWJlbCI6IlBsdWdpbiBTdG9yZSIsImZvbnRJY29uIjoicGx1Z2luIn1d
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.4.0
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: 9DD3EHCB00KSL545GKULL6GD
+    schemaVersion: 1.2.6
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: 67HYCIG67ILTB6ZDKE735COS
+    schemaVersion: 3.5.1
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: 55TI59YOF52A5G7IF2TBQ7AT
+    schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: UQJVZ6TKP4LJW1TEQDBYLVL1
+    schemaVersion: 1.0.21
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: HILWCZZ034TDLEZJUP7G6FBZ
+    schemaVersion: 2.11.6
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: true
+    licenseKey: 96ZPN0B0IBZ00ZY11AIAVIOL
+    schemaVersion: 3.0.10
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 3KFFKI3D1J79JB6JLFFR55WZ
+    schemaVersion: 3.0.11
+  similar:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  snitch:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  vizy:
+    edition: standard
+    enabled: true
+    licenseKey: 7ZU5NURA9OX4LOHAUSRDX7LU
+    schemaVersion: 0.9.0
+  webperf:
+    edition: standard
+    enabled: true
+    licenseKey: SVCR8N666M56DHR88XXWBXFG
+    schemaVersion: 1.0.1
 system:
   edition: pro
   live: true
