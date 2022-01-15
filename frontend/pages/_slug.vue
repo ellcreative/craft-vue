@@ -48,11 +48,11 @@ export default {
     Picture,
     Form,
   },
-  async asyncData({ app, route }) {
-    return {
-      headData: await app.seomaticMeta(route),
-    }
-  },
+  // async asyncData({ app, route }) {
+  //   return {
+  //     headData: await app.seomaticMeta(route),
+  //   }
+  // },
   computed: {
     page() {
       if (this.pages) {

@@ -1,4 +1,4 @@
-dateModified: 1642200784
+dateModified: 1642201896
 email:
   fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
@@ -117,7 +117,7 @@ plugins:
       metaCacheDuration: 'null'
       pluginName: SEOmatic
       regenerateSitemapsAutomatically: true
-      renderEnabled: true
+      renderEnabled: false
       separatorChar: '|'
       sidebarDisplayPreviewTypes:
         - google
