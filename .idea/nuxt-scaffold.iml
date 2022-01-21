@@ -124,6 +124,7 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/thenetworg/oauth2-azure" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/commerceguys/addressing" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sabberworm/php-css-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/vaersaagod/dospaces" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
