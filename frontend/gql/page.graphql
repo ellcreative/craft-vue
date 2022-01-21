@@ -4,13 +4,13 @@ query page($slug: [String]) {
     id
     title
     ... on pages_page_Entry {
-      pageBuilder {
-        ... on pageBuilder_copy_BlockType {
+      neoPagebuilder {
+        ... on neoPagebuilder_copy_BlockType {
           typeHandle
           itemHeadline
           itemCopy
         }
-        ... on pageBuilder_image_BlockType {
+        ... on neoPagebuilder_image_BlockType {
           typeHandle
           image {
             id,
@@ -28,7 +28,7 @@ query page($slug: [String]) {
             }
           }
         }
-        ... on pageBuilder_form_BlockType {
+        ... on neoPagebuilder_form_BlockType {
           typeHandle
           itemHeadline
           form

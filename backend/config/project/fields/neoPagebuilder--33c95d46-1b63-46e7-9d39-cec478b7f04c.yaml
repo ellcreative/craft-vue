@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: abfe13f7-402d-41ab-a4bd-c29c8f252846 # Pagebuilders
+handle: neoPagebuilder
+instructions: ''
+name: ' Neo Pagebuilder'
+searchable: false
+settings:
+  maxBlocks: ''
+  maxLevels: ''
+  maxTopBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+  wasModified: false
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

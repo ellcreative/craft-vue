@@ -1,0 +1,21 @@
+columnSuffix: apyyufuv
+contentColumnType: text
+fieldGroup: abfe13f7-402d-41ab-a4bd-c29c8f252846 # Pagebuilders
+handle: vizyPagebuilder
+instructions: ''
+name: ' Vizy Pagebuilder'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
+  trimEmptyParagraphs: '1'
+  vizyConfig: ''
+translationKeyFormat: null
+translationMethod: none
+type: verbb\vizy\fields\VizyField
