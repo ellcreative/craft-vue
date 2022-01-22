@@ -1,0 +1,34 @@
+childBlocks: null
+field: 7837b255-d91e-41bf-a6ec-68c15a5c9ab4 #  Page Builder
+fieldLayouts:
+  5dad459c-552e-4c5b-93c2-8cc6f20b675e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 20672a1b-d265-4cad-8b42-ad0c93d5c3eb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f1ddb4bc-4c1a-45d2-88e6-845c40993daf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: form
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Form
+sortOrder: 8
+topLevel: false

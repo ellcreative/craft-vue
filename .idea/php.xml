@@ -274,6 +274,10 @@
       <path value="$PROJECT_DIR$/backend/vendor/commerceguys/addressing" />
       <path value="$PROJECT_DIR$/backend/vendor/sabberworm/php-css-parser" />
       <path value="$PROJECT_DIR$/backend/vendor/vaersaagod/dospaces" />
+      <path value="$PROJECT_DIR$/backend/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/backend/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-shell" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/var-dumper" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

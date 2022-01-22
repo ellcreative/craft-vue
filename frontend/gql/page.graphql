@@ -4,34 +4,28 @@ query page($slug: [String]) {
     id
     title
     ... on pages_page_Entry {
-      neoPagebuilder {
-        ... on neoPagebuilder_copy_BlockType {
+      pageBuilder {
+        ... on pageBuilder_copy_BlockType {
           typeHandle
           itemHeadline
           itemCopy
         }
-        ... on neoPagebuilder_image_BlockType {
+        ... on pageBuilder_image_BlockType {
           typeHandle
           image {
             id,
             ... on images_Asset {
               mimeType
               alt
-              thumbnail {
-                src
-                srcset
-                srcWebp
-                srcsetWebp
-                maxSrcsetWidth
-                placeholderImage
-              }
             }
           }
         }
-        ... on neoPagebuilder_form_BlockType {
+        ... on pageBuilder_form_BlockType {
           typeHandle
           itemHeadline
-          form
+          freeform{
+            handle
+          }
         }
       }
     }

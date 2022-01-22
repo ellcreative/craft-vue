@@ -1,0 +1,10 @@
+childBlocks:
+  - column
+field: 7837b255-d91e-41bf-a6ec-68c15a5c9ab4 #  Page Builder
+handle: threeColumn
+maxBlocks: 0
+maxChildBlocks: 3
+maxSiblingBlocks: 0
+name: 'Three Column'
+sortOrder: 3
+topLevel: false

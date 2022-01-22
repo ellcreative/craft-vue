@@ -1,5 +1,5 @@
 fieldLayouts:
-  777dddb5-1ef0-4ab6-8622-fe10a164b3fb:
+  cc36d3d4-a5c9-4cab-be83-0ecfc47d7916:
     tabs:
       -
         elements:
@@ -23,11 +23,11 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
           -
-            fieldUid: 7837b255-d91e-41bf-a6ec-68c15a5c9ab4 #  Page Builder
+            fieldUid: 300d2d1c-6e37-4f2c-a4ef-fb19b059131b
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 168e8e0b-765a-48af-8234-2e44e6af6099 #  Vizy Pagebuilder
+            fieldUid: b86cad44-92d7-4d69-94df-ab99dc632d1b
             instructions: null
             label: null
             required: false
@@ -46,11 +46,20 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: page
-hasTitleField: true
-name: Page
-section: a19a9d6a-7e70-4dd0-b337-7fc490c001ec # Pages
+handle: images
+hasUrls: true
+name: Images
+settings:
+  bucket: $SPACES_BUCKET
+  contentDisposition: ''
+  endpoint: $SPACES_ENDPOINT
+  expires: ''
+  keyId: $SPACES_API_KEY
+  region: $SPACES_REGION
+  secret: $SPACES_SECRET
+  subfolder: $SPACES_SUBFOLDER
 sortOrder: 1
-titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: vaersaagod\dospaces\Volume
+url: $SPACES_URL

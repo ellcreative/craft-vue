@@ -1,11 +1,22 @@
 isPublic: false
 name: Frontend
 scope:
+  - 'sections.1e834834-9328-4738-abd3-0a9faca935ee:read'
+  - 'entrytypes.e9c69fdf-b00f-4708-b887-f415d3b761b7:read'
+  - 'entrytypes.14e2a881-8b92-4d27-8487-96df61598ba7:read'
   - 'sections.a19a9d6a-7e70-4dd0-b337-7fc490c001ec:read' # Pages
   - 'entrytypes.12c7facb-5f44-4a34-a722-5152910e42d2:read' # Page
+  - 'sections.a94423c1-54ab-4400-82f9-182c31457bf7:read'
+  - 'entrytypes.db739e29-798e-4beb-96ba-d3a5bcf0a672:read'
+  - 'entrytypes.d92aef24-3722-4036-bd2d-6a65b4a66acc:read'
+  - 'volumes.af36c71e-b338-439e-b23d-49b54221a8aa:read' # Images
+  - 'globalsets.9a5b0561-1efc-4df9-b27b-bac4d05d94c8:read'
+  - 'globalsets.a8470a16-fdde-49ad-8e54-6f90bea4baf3:read'
+  - 'categorygroups.a2642e2b-5271-4169-b2c3-5ee5b5a6426c:read'
   - 'freeformForms.all:read'
   - 'navigationNavs.all:read'
   - 'navigationNavs.21c395ab-0cfe-4302-b582-b40c41f0ce69:read' # Main
   - 'retour.all:read'
   - 'seomatic.all:read'
   - 'formieForms.all:read'
+  - 'formieSubmissions.all:read'

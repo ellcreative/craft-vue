@@ -1,0 +1,14 @@
+childBlocks:
+  - twoColumn
+  - threeColumn
+  - copy
+  - image
+  - form
+field: 7837b255-d91e-41bf-a6ec-68c15a5c9ab4 #  Page Builder
+handle: block
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Block
+sortOrder: 1
+topLevel: true
