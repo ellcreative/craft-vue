@@ -41,18 +41,12 @@ export default {
       variables() {
         return { slug: [this.$route.params.slug] }
       },
-      // pollInterval: process.server ? false : 5000, // Auto update !
     },
   },
   components: {
     Picture,
     Form,
   },
-  // async asyncData({ app, route }) {
-  //   return {
-  //     headData: await app.seomaticMeta(route),
-  //   }
-  // },
   computed: {
     page() {
       if (this.pages) {
