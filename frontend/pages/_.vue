@@ -1,8 +1,13 @@
 <template>
   <div>
     <template v-if="page">
+      <pre>{{ page }}</pre>
       <template v-if="page.neoPageBuilder && page.neoPageBuilder.length">
         <NeoPageBuilder :blocks="page.neoPageBuilder" :cache-key="`${page.id}::${page.dateUpdated}`" />
+      </template>
+      <template v-if="page.vizyPageBuilder">
+        akdlfjalkds
+        <pre>{{ vizyPageBuilder }}</pre>
       </template>
     </template>
   </div>
