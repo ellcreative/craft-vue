@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: f476ca1f-3ad0-4d18-8499-2b9f582b7c7d
-handle: pageBuilder
+handle: neoPageBuilder
 instructions: ''
-name: ' Page Builder'
+name: ' Neo Page Builder'
 searchable: false
 settings:
   maxBlocks: ''

@@ -1,0 +1,15 @@
+#import "../fields/neoPageBuilder.graphql"
+
+fragment EntryPageFields on pages_page_Entry {
+  neoPageBuilder (level: 1) {
+    ...NeoPageBuilderBlock
+    ...NeoPageBuilderTwoColumnBlock
+  }
+  seomatic(asArray: true) {
+    metaTitleContainer
+    metaTagContainer
+    metaLinkContainer
+    metaScriptContainer
+    metaJsonLdContainer
+  }
+}

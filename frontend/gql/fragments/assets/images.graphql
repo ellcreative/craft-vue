@@ -1,0 +1,28 @@
+#
+# Volumes
+#
+fragment AssetImagesFields on images_Asset {
+  id
+  title
+  mimeType
+  alt
+  url
+}
+
+#
+# Optimized Image Fields
+#
+fragment AssetImagesOptimizedThumbnail on images_Asset {
+  oiThumbnail {
+    focalPoint
+    src
+    srcset
+    srcWebp
+    srcsetWebp
+    maxSrcsetWidth
+    placeholderWidth
+    placeholderHeight
+    placeholderImage
+    placeholderSilhouette
+  }
+}

@@ -202,6 +202,73 @@ const months = [
   'December',
 ]
 
+const rowColumnsCalculator = (total, width) => {
+  const rowColumns = []
+  if (width > 900) {
+    const remainder = total % 6
+    let offset = 0
+    for (let r = (total - remainder) / 6; r--; ) {
+      rowColumns.push([offset + 1], [offset + 2, offset + 3], [offset + 4, offset + 5, offset + 6])
+      offset += 6
+    }
+    switch (remainder) {
+      case 1:
+        rowColumns.push([offset + 1])
+        break
+      case 2:
+        rowColumns.push([offset + 1, offset + 2])
+        break
+      case 3:
+        rowColumns.push([offset + 1], [offset + 2, offset + 3])
+        break
+      case 4:
+        rowColumns.push([offset + 1], [offset + 2, offset + 3], [offset + 4])
+        // rowColumns.push([offset + 1], [offset + 2, offset + 3, offset + 4])
+        break
+      case 5:
+        rowColumns.push([offset + 1, offset + 2], [offset + 3, offset + 4, offset + 5])
+        // rowColumns.push([offset + 1, offset + 2], [offset + 3], [offset + 4, offset + 5])
+        // rowColumns.push([offset + 1], [offset + 2, offset + 3, offset + 4], [offset + 5])
+        // TODO: Tablet should be 2 | 1 | 2
+        break
+    }
+  } else if (width > 600) {
+    const remainder = total % 3
+    let offset = 0
+    for (let r = (total - remainder) / 3; r--; ) {
+      rowColumns.push([offset + 1], [offset + 2, offset + 3])
+      offset += 3
+    }
+    switch (remainder) {
+      case 1:
+        rowColumns.push([offset + 1])
+        break
+      case 2:
+        rowColumns.push([offset + 1, offset + 2])
+        break
+    }
+  } else {
+    for (let r = 0; r < total; r++) {
+      rowColumns.push([r])
+    }
+  }
+  return rowColumns
+}
+
+/*
+for (let total = 1; total < 13; total++) {
+  const rowColumns = rowColumnsCalculator(total)
+  console.log(`Total: ${total}`)
+  const display = [
+    '',
+    '████████████',
+    '█████▌▐█████',
+    '███▌▐██▌▐███'
+  ]
+  rowColumns.map(row => console.log(display[row.length]))
+}
+*/
+
 export default (context, inject) => {
   inject('supReg', supReg)
   inject('wordLimit', wordLimit)
@@ -211,4 +278,5 @@ export default (context, inject) => {
   inject('cards', cards)
   inject('getFirstIndex', getFirstIndex)
   inject('dateFormat', dateFormat)
+  inject('rowColumnsCalculator', rowColumnsCalculator)
 }

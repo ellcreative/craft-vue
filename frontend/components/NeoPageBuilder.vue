@@ -35,9 +35,6 @@
           context="333333"
         />
       </template>
-      <template v-else-if="block.typeHandle === 'clientBricks'">
-        <ClientBricks />
-      </template>
       <!-- COLUMN -->
       <template v-else-if="block.typeHandle === 'column'">
         <PageBuilder
@@ -72,10 +69,6 @@
       <template v-else-if="block.typeHandle === 'hr'">
         <hr />
       </template>
-      <!-- SLIDER -->
-      <template v-else-if="block.typeHandle === 'slider'">
-        <Slider :block="block" />
-      </template>
       <!-- MAP -->
       <template v-else-if="block.typeHandle === 'map'">
         <Map :block="block" />
@@ -95,37 +88,6 @@
         </template>
       </template>
       <!-- WIDGETS WIDGETS WIDGETS -->
-      <!-- Featured Clients -->
-      <template v-else-if="block.typeHandle === 'featuredClients'">
-        <FeaturedClients :clients="block.clients" />
-      </template>
-      <!-- SERVICES ACCORDION -->
-      <template v-else-if="block.typeHandle === 'servicesAccordion'">
-        <ServicesAccordion />
-      </template>
-      <!-- BLOG LIST -->
-      <template v-else-if="block.typeHandle === 'blogList'">
-        <BlogList />
-      </template>
-      <!-- JOB LIST -->
-      <template v-else-if="block.typeHandle === 'jobList'">
-        <JobList />
-      </template>
-      <!-- CLIENT LIST -->
-      <template v-else-if="block.typeHandle === 'clientList'">
-        <ClientList />
-      </template>
-      <!-- ICON LIST -->
-      <template v-else-if="block.typeHandle === 'clientLogoList'">
-        <IconList />
-      </template>
-      <template v-else-if="block.typeHandle === 'relatedList'">
-        <RelatedList :title="relatedListTitle" :items="relatedListItems" />
-      </template>
-      <!-- Mobile Example -->
-      <template v-else-if="block.typeHandle === 'mobileExample'">
-        <MobileExample :block="block" />
-      </template>
       <!-- else MISSING -->
       <template v-else>
         <div class="error-block">
@@ -139,36 +101,16 @@
 </template>
 
 <script>
-import ServicesAccordion from './ServicesAccordion'
-import FeaturedClients from './FeaturedClients'
-import BlogList from './BlogList'
-import ClientBricks from './ClientBricks'
-import JobList from './JobList'
-import ClientList from './ClientList'
-import IconList from './IconList'
-import Slider from './Slider'
-import MobileExample from './MobileExample'
 import Form from './elements/Form'
 import LazyPicture from './elements/LazyPicture'
 import Map from './elements/Map'
-import RelatedList from './elements/RelatedList'
 
 export default {
   name: 'PageBuilder',
   components: {
-    JobList,
-    BlogList,
     Form,
     LazyPicture,
     Map,
-    RelatedList,
-    ServicesAccordion,
-    FeaturedClients,
-    ClientBricks,
-    ClientList,
-    IconList,
-    Slider,
-    MobileExample,
   },
   props: {
     blocks: {

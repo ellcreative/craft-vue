@@ -1,59 +1,76 @@
 <template>
   <div>
-    <div v-for="(block, b) in page.pageBuilder" :key="b">
-      <div v-if="block.typeHandle === 'copy'">
-        <h1>{{ block.itemHeadline }}</h1>
-        <div v-html="$sanitize(block.itemCopy)"></div>
-      </div>
-      <div v-else-if="block.typeHandle === 'image'">
-        <div class="images">
-          <Picture
-            v-for="image in block.image"
-            :key="image.id"
-            :src-webp="image.thumbnail.srcWebp"
-            :srcset-webp="image.thumbnail.srcsetWebp"
-            :src="image.thumbnail.src"
-            :srcset="image.thumbnail.srcset"
-            :src-type="image.mimeType"
-            :placeholder="image.thumbnail.placeholderImage"
-            :alt="image.alt"
-          />
-        </div>
-      </div>
-      <div v-if="block.typeHandle === 'form'">
-        <h1 v-if="block.itemHeadline">{{ block.itemHeadline }}</h1>
-        <Form :form-handle="camelCase(block.form)" />
-      </div>
-    </div>
+    <template v-if="page">
+      <template v-if="page.neoPageBuilder && page.neoPageBuilder.length">
+        <NeoPageBuilder :blocks="page.neoPageBuilder" :cache-key="`${page.id}::${page.dateUpdated}`" />
+      </template>
+    </template>
   </div>
 </template>
 
 <script>
-import Picture from '~/components/Picture'
-import Form from '~/components/Form'
-import gqlPage from '~/gql/page.graphql'
+import { gqlPage } from '~/gql/entries.graphql'
+import NeoPageBuilder from '~/components/NeoPageBuilder'
 
 export default {
-  apollo: {
-    pages: {
-      query: gqlPage,
-      prefetch: ({ route }) => ({ slug: route.params.slug }),
-      variables() {
-        return { slug: [this.$route.params.slug] }
-      },
-    },
-  },
+  loading: false,
   components: {
-    Picture,
-    Form,
+    NeoPageBuilder,
   },
-  computed: {
-    page() {
-      if (this.pages) {
-        return this.pages[0]
+  async fetch() {
+    // get the uri from the context
+    let uri = this.$route.params.pathMatch
+    if (!uri) {
+      uri = '__home__'
+    }
+
+    this.$timeStart('graphql Page')
+    const client = this.$apolloProvider.defaultClient
+    const { data } = await client.query({
+      query: gqlPage,
+      variables: { ...client.defaultOptions.$query.variables, uri },
+    })
+    this.$timeEnd('graphql Page', '[GQL] Page Query')
+
+    // throw a 404 if appropriate (https://nuxtjs.org/blog/understanding-how-fetch-works-in-nuxt-2-12#error-handling)
+    if (!data?.page) {
+      this.$store.commit('setLoadingState', false)
+      if (!(await this.$checkRedirect(this, `/${uri}`))) {
+        this.$store.commit('set404State', true)
       }
-      return {}
-    },
+      return
+    }
+
+    // set the page data
+    if (data.page?.seomatic) {
+      this.headData = {
+        ...this.$processSeomaticData(data.page.seomatic),
+        bodyAttrs: {
+          class: `page page--${this.$paramCase(data.page.typeHandle)} ${uri === '__home__' ? 'page--homepage' : ''}`,
+        },
+      }
+    }
+    this.page = data.page
+
+    if (uri !== '__home__') {
+      const breadcrumbs = [{ title: this.page.title, url: this.$stripDomain(this.page.url) }]
+      if (this.page.parent) {
+        if (this.page.typeHandle === 'service') {
+          breadcrumbs.unshift({ title: 'Services', url: '/services' })
+        } else {
+          breadcrumbs.unshift({ title: this.page.parent.title, url: this.$stripDomain(this.page.parent.url) })
+        }
+      }
+      this.$store.commit('setBreadcrumbs', breadcrumbs)
+    }
+
+    this.$store.commit('setLoadingState', false)
+  },
+  data() {
+    return {
+      page: {},
+      headData: {},
+    }
   },
   head() {
     return this.headData

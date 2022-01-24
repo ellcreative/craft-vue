@@ -35,8 +35,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
           -
-            fieldUid: b86cad44-92d7-4d69-94df-ab99dc632d1b
+            fieldUid: c40d22bf-e52e-472a-a0f6-2a3f363cf0d1
             instructions: null
             label: null
             required: false
@@ -44,8 +48,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
+        name: 'Optimized Images'
+        sortOrder: 2
 handle: images
 hasUrls: true
 name: Images
