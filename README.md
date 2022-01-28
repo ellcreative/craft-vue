@@ -7,29 +7,27 @@ In order to spin up this repo, you need to spin up both the back end and the fro
 ### BACKEND Setup
 1. cd to `backend`
 2. `nitro add`
-   Enter the hostname [backend.nitro]: api-REPONAME.nitro
+   Enter the hostname [backend.nitro]: api-craftvue.nitro
    Enter the web root for the site [web]:
    Choose a PHP version:
-1. 8.0
-2. 7.4
-3. 7.3
-4. 7.2
-5. 7.1
-6. 7.0
+3. 8.0
+4. 7.4
+5. 7.3
+6. 7.2
+7. 7.1
+8. 7.0
    Enter your selection: 3
-   Add a database for the site [Y/n] y
-   Select the database engine:
-7. mysql-5.7-3306.database.nitro
-8. postgres-13-5432.database.nitro
-   Enter your selection: 1
-   Enter the new database name: REPONAME_db_dev
+   Add a database for the site [Y/n] n
    Should we update the env file? [y/N] n
    Apply changes now [Y/n]? y
-4. `nitro composer install`
+9. cd to `storage/backups` and use `nitro db import (your-backup-file.sql or .zip)` https://craftcms.com/docs/nitro/2.x/importing.html#complete-example TODO: add the prompts here
+10. `nitro composer install`
+11. your site can be found at api-craftvue.nitro
+12. TODO: add pw/username info somehow
 ## FRONTEND Setup
 1. cd to `frontend`
 1. copy the contents of `.env.example` to a new file, `.env`
-1. update or double check the following lines:
+1. update or double-check the following lines:
     ```
     GRAPHQL_URL=http://api-craftvue.nitro
     BACKEND_URL=http://api-craftvue.nitro
@@ -50,7 +48,7 @@ Yarn is for frontend, composer is for backend.
 1. Navigate to Utilities/Database Backup.
 2. Click Backup Button.
 3. Add the new file (in backend/storage/backups) to git.
-
+9. https://craftcms.com/docs/nitro/2.x/backups.html#complete-example
 ## Restore DB
 https://craftcms.com/docs/nitro/2.x/importing.html
 

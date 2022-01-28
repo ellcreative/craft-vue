@@ -1,0 +1,28 @@
+handle: main
+instructions: ''
+maxNodes: ''
+name: Main
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  e06c8337-4b69-45aa-95f7-d6faf18148c0: null # Nuxt
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: c7cc1a82-490b-44ce-9dbe-3ef62eb5a60b

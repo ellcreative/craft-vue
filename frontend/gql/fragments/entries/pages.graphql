@@ -1,0 +1,28 @@
+#import "../fields/neoPageBuilder.graphql"
+
+fragment EntryPageFields on pages_page_Entry {
+  neoPageBuilder (level: 1) {
+    ...NeoPageBuilderBlock
+    ...NeoPageBuilderTwoColumnBlock
+  }
+#  TODO: MOVE THIS FRAGMENT WHERE IT BELONGS, IN A FIELDS FRAGMENT FILE
+  vizyPageBuilder {
+    nodes {
+      type
+      tagName
+      html
+      content
+      attrs
+      marks
+      text
+      rawNode
+    }
+  }
+  seomatic(asArray: true) {
+    metaTitleContainer
+    metaTagContainer
+    metaLinkContainer
+    metaScriptContainer
+    metaJsonLdContainer
+  }
+}

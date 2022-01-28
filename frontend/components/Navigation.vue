@@ -58,3 +58,56 @@ ul {
   }
 }
 </style>
+<!--<template>-->
+<!--  <div class="navigation" :class="'navigation&#45;&#45;' + $paramCase(handle)">-->
+<!--    <template v-if="$paramCase(handle) === 'main'">-->
+<!--      <svg-icon class="navigation__triangle" name="triangle" />-->
+<!--    </template>-->
+<!--    <slot />-->
+<!--    <div class="navigation__contents">-->
+<!--      <ul>-->
+<!--        <template v-for="navItem in navigation">-->
+<!--          <NavItem :key="navItem.id" :nav-item="navItem" />-->
+<!--        </template>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</template>-->
+
+<!--<script>-->
+<!--import NavItem from './elements/NavItem'-->
+<!--import { gqlNavigation } from '~/gql/navigations.graphql'-->
+
+<!--export default {-->
+<!--  name: 'Navigation',-->
+<!--  components: {-->
+<!--    NavItem,-->
+<!--  },-->
+<!--  props: {-->
+<!--    handle: {-->
+<!--      type: String,-->
+<!--      default: '',-->
+<!--    },-->
+<!--  },-->
+<!--  serverCacheKey(props) {-->
+<!--    return `navigation::${props.handle}`-->
+<!--  },-->
+<!--  async fetch() {-->
+<!--    this.$timeStart(`graphql Nav ${this.handle}`)-->
+<!--    const client = this.$apolloProvider.defaultClient-->
+<!--    const { data } = await client.query({-->
+<!--      query: gqlNavigation,-->
+<!--      variables: { ...client.defaultOptions.$query.variables, handle: this.handle },-->
+<!--    })-->
+<!--    this.$timeEnd(`graphql Nav ${this.handle}`, `[GQL] Nav Query ${this.handle}`)-->
+
+<!--    // set the page data-->
+<!--    this.navigation = data.navigation-->
+<!--  },-->
+<!--  data() {-->
+<!--    return {-->
+<!--      navigation: [],-->
+<!--    }-->
+<!--  },-->
+<!--}-->
+<!--</script>-->

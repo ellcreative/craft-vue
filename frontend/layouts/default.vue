@@ -1,39 +1,102 @@
 <template>
   <div>
-    <navigation :pages="pages" />
-    <div class="page">
+    <template>
+      <Navigation handle="main" :class="{ active: $store.state.isMenuOpen }" />
+    </template>
+    <div class="main-content" :class="{ active: $store.state.isMenuOpen }">
       <nuxt />
     </div>
+    <template v-if="!$store.state.isTransitioning">
+      <transition name="fade" mode="out-in">
+        <!--        <Footer />-->
+      </transition>
+    </template>
+    <client-only>
+      <!--      <CookieControl v-if="$store.state.globals.sets.gdpr">-->
+      <!--        <template v-slot:bar>-->
+      <!--          <div class="cookieControl__BarTitle">{{ $store.state.globals.sets.gdpr.cookieHeadline }}</div>-->
+      <!--          <div v-html="$store.state.globals.sets.gdpr.cookieCopy"></div>-->
+      <!--        </template>-->
+      <!--      </CookieControl>-->
+    </client-only>
   </div>
 </template>
 
 <script>
 import Navigation from '~/components/Navigation'
-import gqlPages from '~/gql/pages.graphql'
 
 export default {
-  apollo: {
-    pages: gqlPages,
-  },
+  middleware: 'load',
   components: {
     Navigation,
+  },
+  data() {
+    return {
+      page: {},
+      headData: {
+        bodyAttrs: {
+          class: '',
+        },
+      },
+    }
+  },
+  computed: {
+    isLoading() {
+      return this.$store.state.isLoading
+    },
+    is404() {
+      return this.$store.state.is404
+    },
+  },
+  watch: {
+    isLoading() {
+      if (process.browser) {
+        if (this.isLoading) {
+          // console.log('this.$nuxt.$loading.start()')
+          this.$nuxt.$loading.start()
+        } else {
+          // console.log('this.$nuxt.$loading.finish()')
+          this.$nuxt.$loading.finish()
+        }
+      }
+    },
+    is404() {
+      this.check404()
+    },
+  },
+  created() {
+    this.$nuxt.$on('set-body-class', this.setBodyClass)
+  },
+  beforeDestroy() {
+    this.$nuxt.$off('set-body-class', this.setBodyClass)
+  },
+  mounted() {
+    this.check404()
+  },
+  methods: {
+    check404() {
+      if (this.is404) {
+        this.$store.commit('set404State', false)
+        this.$nuxt.error({ statusCode: 404, message: 'Page not found' })
+      }
+    },
+    setBodyClass(classString) {
+      this.headData = {
+        ...this.headData,
+        bodyAttrs: {
+          ...this.headData.bodyAttrs,
+          class: classString,
+        },
+      }
+    },
+  },
+  head() {
+    return this.headData
   },
 }
 </script>
 
 <style lang="scss">
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -68,5 +131,15 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.cookieControl {
+  &__BarContainer {
+    border-top: 1px solid #d0d0d0;
+  }
+
+  &__BarTitle {
+    color: #fff;
+  }
 }
 </style>

@@ -1,7 +1,40 @@
-query entries {
-  entries: entries {
+#import "./fragments/entries/pages.graphql"
+
+query gqlPage($uri: [String]) {
+  page: entry(uri: $uri) {
+    dateUpdated
     uid
     id
     title
+    slug
+    url
+    typeHandle
+    ...EntryPageFields
+
+    parent {
+      title
+      url
+    }
+
+    seomatic(asArray: true) {
+      metaTitleContainer
+      metaTagContainer
+      metaLinkContainer
+      metaScriptContainer
+      metaJsonLdContainer
+    }
+  }
+}
+
+query gqlArticles($limit: Int, $offset:Int,) {
+  count: entryCount(section: "blog")
+  articles: entries(limit: $limit, offset: $offset, section: "blog") {
+    uid
+    id
+    title
+    slug
+    url
+    typeHandle
+    postDate
   }
 }

@@ -33,7 +33,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-queue" />
       <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-swiftmailer" />
       <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-composer" />
-      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-shell" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/debug" />
@@ -47,7 +46,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/backend/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/backend/vendor/dnoegel/php-xdg-base-dir" />
@@ -59,7 +57,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/laminas/laminas-stdlib" />
       <path value="$PROJECT_DIR$/backend/vendor/laminas/laminas-escaper" />
       <path value="$PROJECT_DIR$/backend/vendor/ezyang/htmlpurifier" />
-      <path value="$PROJECT_DIR$/backend/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/backend/vendor/league/oauth2-client" />
       <path value="$PROJECT_DIR$/backend/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/backend/vendor/mrclay/props-dic" />
@@ -75,7 +72,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/voku/portable-utf8" />
       <path value="$PROJECT_DIR$/backend/vendor/voku/anti-xss" />
       <path value="$PROJECT_DIR$/backend/vendor/cebe/markdown" />
-      <path value="$PROJECT_DIR$/backend/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/backend/vendor/seld/cli-prompt" />
       <path value="$PROJECT_DIR$/backend/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/backend/vendor/seld/jsonlint" />
@@ -254,6 +250,34 @@
       <path value="$PROJECT_DIR$/backend/vendor/mmikkel/cp-field-inspect" />
       <path value="$PROJECT_DIR$/backend/vendor/cakephp/utility" />
       <path value="$PROJECT_DIR$/backend/vendor/hashids/hashids" />
+      <path value="$PROJECT_DIR$/backend/vendor/verbb/vizy" />
+      <path value="$PROJECT_DIR$/backend/vendor/yii2mod/yii2-array-query" />
+      <path value="$PROJECT_DIR$/backend/vendor/verbb/formie" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/html-to-markdown" />
+      <path value="$PROJECT_DIR$/backend/vendor/league/oauth2-google" />
+      <path value="$PROJECT_DIR$/backend/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/backend/vendor/html2text/html2text" />
+      <path value="$PROJECT_DIR$/backend/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/backend/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/backend/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/backend/vendor/guzzlehttp/oauth-subscriber" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/backend/vendor/giggsey/locale" />
+      <path value="$PROJECT_DIR$/backend/vendor/giggsey/libphonenumber-for-php" />
+      <path value="$PROJECT_DIR$/backend/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/backend/vendor/thenetworg/oauth2-azure" />
+      <path value="$PROJECT_DIR$/backend/vendor/commerceguys/addressing" />
+      <path value="$PROJECT_DIR$/backend/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/backend/vendor/vaersaagod/dospaces" />
+      <path value="$PROJECT_DIR$/backend/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/backend/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/backend/vendor/yiisoft/yii2-shell" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/var-dumper" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

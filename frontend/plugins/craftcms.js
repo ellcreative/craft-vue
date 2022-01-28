@@ -1,3 +1,9 @@
+const scriptsRegex = /(<script.*?>(?<innerHTML>.*?)<\/script>)+/gis
+const scriptRegex = /<script.*?>(?<innerHTML>.*?)<\/script>/is
+// const attrsRegex = /(?<!>.*) [a-z-]+=".*?"/gis
+const attrsRegex = /[a-z-]+=".*?"/gis
+const attrRegex = /(?<attrName>[a-z-]+)="(?<attrValue>.*)"/is
+
 export default async (context, inject) => {
   /**
    * Processes data from seomatic so that it is ready to assign to
@@ -96,6 +102,40 @@ export default async (context, inject) => {
       seomaticData.meta.push(ogSiteName)
     }
     context.app.$timeEnd('process Seomatic Data', '[SEO] Process SEO Data')
+    if (context.store.state.globals?.sets?.tracking?.metaTags) {
+      context.app.$timeStart('processMetaTags')
+      const metaTags = context.store.state.globals.sets.tracking.metaTags
+      try {
+        for (const metaTag of metaTags) {
+          seomaticData.meta.push({
+            hid: metaTag.name,
+            name: metaTag.name,
+            content: metaTag.content,
+          })
+        }
+      } catch (e) {}
+      context.app.$timeEnd('processMetaTags', '[SEO] Process Meta Tags')
+    }
+    if (/* context.app.store.state.cookieOptIn && */ context.store.state.globals?.sets?.tracking?.scripts) {
+      context.app.$timeStart('processTrackingGlobal')
+      const trackingScripts = context.store.state.globals.sets.tracking.scripts
+      try {
+        for (const trackingScript of trackingScripts) {
+          const script = trackingScript.script
+          for (const scriptStr of script.match(scriptsRegex)) {
+            const addScript = {}
+            const scriptMatch = scriptStr.match(scriptRegex)
+            addScript.innerHTML = scriptMatch.groups.innerHTML
+            for (const attrStr of scriptStr.match(attrsRegex)) {
+              const attrMatch = attrStr.match(attrRegex)
+              addScript[attrMatch.groups.attrName] = attrMatch.groups.attrValue
+            }
+            seomaticData.script.push(addScript)
+          }
+        }
+      } catch (e) {}
+      context.app.$timeEnd('processTrackingGlobal', '[SEO] Process Tracking Global')
+    }
     return { htmlAttrs: { lang }, ...seomaticData }
   }
 
@@ -149,7 +189,7 @@ export default async (context, inject) => {
   }
 
   const getEmbedJsonData = async url => {
-    url = url.replace(context.env.CLOUDFRONT_URL, `/${context.env.CLOUDFRONT_ID}/`)
+    // url = url.replace(context.env.CLOUDFRONT_URL, `/${context.env.CLOUDFRONT_ID}/`)
     return await context.$axios.$get(encodeURI(url))
   }
 

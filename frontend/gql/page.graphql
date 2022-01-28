@@ -1,37 +1,31 @@
-query page($slug: [String]) {
+query gqlPage($slug: [String]) {
   pages: entries(section: "pages", slug: $slug) {
     uid
     id
     title
     ... on pages_page_Entry {
-      pageBuilder {
-        ... on pageBuilder_copy_BlockType {
+      neoPageBuilder {
+        ... on neoPageBuilder_copy_BlockType {
           typeHandle
           itemHeadline
           itemCopy
         }
-        ... on pageBuilder_image_BlockType {
+        ... on neoPageBuilder_image_BlockType {
           typeHandle
           image {
             id,
             ... on images_Asset {
               mimeType
               alt
-              thumbnail {
-                src
-                srcset
-                srcWebp
-                srcsetWebp
-                maxSrcsetWidth
-                placeholderImage
-              }
             }
           }
         }
-        ... on pageBuilder_form_BlockType {
+        ... on neoPageBuilder_form_BlockType {
           typeHandle
           itemHeadline
-          form
+          freeform{
+            handle
+          }
         }
       }
     }

@@ -1,0 +1,97 @@
+#import "../assets/images.graphql"
+
+#
+# Level 1
+#
+fragment NeoPageBuilderBlock on neoPageBuilder_block_BlockType {
+  id
+  typeHandle
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderTwoColumnBlock
+    ...NeoPageBuilderThreeColumnBlock
+    ...NeoPageBuilderCopyBlock
+    ...NeoPageBuilderImageBlock
+    ...NeoPageBuilderFormBlock
+  }
+}
+
+#
+# Level 2
+#
+
+fragment NeoPageBuilderTwoColumnBlock on neoPageBuilder_twoColumn_BlockType {
+  id
+  typeHandle
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderColumnBlock
+  }
+}
+
+fragment NeoPageBuilderThreeColumnBlock on neoPageBuilder_threeColumn_BlockType {
+  id
+  typeHandle
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderColumnBlock
+  }
+}
+
+fragment NeoPageBuilderCopyBlock on neoPageBuilder_copy_BlockType {
+  copy: itemCopy
+}
+
+#
+# Level 3
+#
+
+fragment NeoPageBuilderColumnBlock on neoPageBuilder_column_BlockType {
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderCopyBlock
+    ...NeoPageBuilderImageBlock
+    ...NeoPageBuilderTwoColumnChildBlock
+    ...NeoPageBuilderFormBlock
+  }
+}
+
+fragment NeoPageBuilderColumnChildBlock on neoPageBuilder_column_BlockType {
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderCopyBlock
+    ...NeoPageBuilderImageBlock
+  }
+}
+
+fragment NeoPageBuilderTwoColumnChildBlock on neoPageBuilder_twoColumn_BlockType {
+  id
+  typeHandle
+  children {
+    id
+    typeHandle
+    ...NeoPageBuilderColumnChildBlock
+  }
+}
+
+fragment NeoPageBuilderImageBlock on neoPageBuilder_image_BlockType {
+  image {
+    ...AssetImagesFields
+  }
+}
+
+fragment NeoPageBuilderFormBlock on neoPageBuilder_form_BlockType {
+  freeform {
+    handle
+  }
+}
+
+#
+# Widgets
+#
+

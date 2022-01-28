@@ -1,0 +1,11 @@
+childBlocks:
+  - copy
+  - image
+field: 7837b255-d91e-41bf-a6ec-68c15a5c9ab4 #  Neo Page Builder
+handle: column
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Column
+sortOrder: 4
+topLevel: false

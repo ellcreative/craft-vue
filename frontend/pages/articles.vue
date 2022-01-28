@@ -19,11 +19,11 @@ export default {
   components: {
     Articles,
   },
-  async asyncData({ app, route }) {
-    return {
-      headData: await app.seomaticMeta(route),
-    }
-  },
+  // async asyncData({ app, route }) {
+  //   return {
+  //     headData: await app.seomaticMeta(route),
+  //   }
+  // },
   data() {
     return {
       environment: process.env,

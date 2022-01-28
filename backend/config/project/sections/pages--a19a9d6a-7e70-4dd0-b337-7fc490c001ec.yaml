@@ -1,0 +1,27 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: pages
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e06c8337-4b69-45aa-95f7-d6faf18148c0: # Nuxt
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: ab271009-fec5-4218-94b7-cfee71a90070
+type: structure
