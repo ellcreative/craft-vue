@@ -1,10 +1,11 @@
-dateModified: 1642987693
+dateModified: 1643320555
 email:
   fromEmail: taylor+craftvue@ellcreative.com
   fromName: Nuxt
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    4d867464-9b72-453b-9f44-0d546957ba04: Formie # Formie
     8a34e70a-b953-498c-9c84-3ea634664c1d: Copy # Copy
     10e63878-8acc-447b-a623-3c058e527cc9: 'Three Column' # Three Column
     12c7facb-5f44-4a34-a722-5152910e42d2: Page # Page
@@ -20,13 +21,14 @@ meta:
     af36c71e-b338-439e-b23d-49b54221a8aa: Images # Images
     b3e1d1ca-562d-48d1-9935-82d27aa939d9: 'Public Schema' # Public Schema
     c3f812bb-f186-401a-abf6-4b7b5cfbf1e2: Column # Column
+    c40d22bf-e52e-472a-a0f6-2a3f363cf0d1: 'Opt Img Thumbnail' # Opt Img Thumbnail
     cc0d7245-f9a3-4fa5-be24-2c18a3535146: New # New
     cc304da5-ba4e-4c2b-bd7f-96b3534e6089: 'Two Column' # Two Column
-    d81bda81-204f-4d06-b0fa-7a1c844b577a: HR # HR
     e06c8337-4b69-45aa-95f7-d6faf18148c0: Nuxt # Nuxt
     e9cad64a-269f-458b-983e-4f839f117801: Frontend # Frontend
     e50799a7-aaec-4292-8d59-1231573c09c0: Nuxt # Nuxt
     e97237b2-ce7a-444a-863b-bd1fd92322ae: 'Contact Form' # Contact Form
+    f1ddb4bc-4c1a-45d2-88e6-845c40993daf: Freeform # Freeform
 plugins:
   architect:
     edition: standard

@@ -11,6 +11,240 @@ settings:
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
+  fieldData:
+    -
+      __assoc__:
+        -
+          - id
+          - group-GteOFXCbn8
+        -
+          - name
+          - Blocks
+        -
+          - blockTypes
+          -
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-QhzQayjdKN
+                1:
+                  - name
+                  - Copy
+                2:
+                  - handle
+                  - copy
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - Copyright
+                      -
+                        - value
+                        - copyright-regular
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - c457ca49-9d53-4269-8a97-c5f05f0d44f0
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - name
+                                - Content
+                              -
+                                - sortOrder
+                                - 1
+                              -
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, 20672a1b-d265-4cad-8b42-ad0c93d5c3eb]
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, c6473523-8b96-4e45-97f1-916f256aa5d3]
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-aPNImFpRWv
+                1:
+                  - name
+                  - Image
+                2:
+                  - handle
+                  - image
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Image File'
+                      -
+                        - value
+                        - file-image-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - ef4163ca-09ea-4b3c-87d5-5298985fc490
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - name
+                                - Content
+                              -
+                                - sortOrder
+                                - 1
+                              -
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, 941fe563-7eed-4240-925c-4fa24a53f7fe] # Image
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-5bNBBPjzcn
+                1:
+                  - name
+                  - Freeform
+                2:
+                  - handle
+                  - freeform
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - Edit
+                      -
+                        - value
+                        - edit-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 0f81440e-8714-4a17-bea5-0955b5b89bdd
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - name
+                                - Content
+                              -
+                                - sortOrder
+                                - 1
+                              -
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, 20672a1b-d265-4cad-8b42-ad0c93d5c3eb]
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, f1ddb4bc-4c1a-45d2-88e6-845c40993daf] # Freeform
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-vQnzJT71DL
+                1:
+                  - name
+                  - Formie
+                2:
+                  - handle
+                  - formie
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Vote Yea'
+                      -
+                        - value
+                        - vote-yea-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - a747d685-d3a7-4886-b0cc-9ee74fb058dc
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - name
+                                - Content
+                              -
+                                - sortOrder
+                                - 1
+                              -
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, 20672a1b-d265-4cad-8b42-ad0c93d5c3eb]
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      5: [required, false]
+                                      6: [width, 100]
+                                      7: [fieldUid, 4d867464-9b72-453b-9f44-0d546957ba04] # Formie
   manualConfig: ''
   showUnpermittedFiles: ''
   showUnpermittedVolumes: ''

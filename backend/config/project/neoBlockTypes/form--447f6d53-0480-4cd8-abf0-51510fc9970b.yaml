@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f1ddb4bc-4c1a-45d2-88e6-845c40993daf
+            fieldUid: f1ddb4bc-4c1a-45d2-88e6-845c40993daf # Freeform
             instructions: null
             label: null
             required: false
@@ -30,5 +30,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: Form
-sortOrder: 8
+sortOrder: 7
 topLevel: false

@@ -65,10 +65,6 @@
       <template v-else-if="block.typeHandle === 'form'">
         <Form v-if="block.form" :form-handle="block.form.handle" />
       </template>
-      <!-- HR -->
-      <template v-else-if="block.typeHandle === 'hr'">
-        <hr />
-      </template>
       <!-- MAP -->
       <template v-else-if="block.typeHandle === 'map'">
         <Map :block="block" />

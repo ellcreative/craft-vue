@@ -1,0 +1,10 @@
+columnSuffix: mxlqrloh
+contentColumnType: integer
+fieldGroup: 412ba351-0766-43a6-982f-4b4ceaa83c03
+handle: freeform
+instructions: ''
+name: Freeform
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: Solspace\Freeform\FieldTypes\FormFieldType

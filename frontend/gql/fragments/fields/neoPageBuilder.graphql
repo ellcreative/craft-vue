@@ -13,7 +13,6 @@ fragment NeoPageBuilderBlock on neoPageBuilder_block_BlockType {
     ...NeoPageBuilderThreeColumnBlock
     ...NeoPageBuilderCopyBlock
     ...NeoPageBuilderImageBlock
-    ...NeoPageBuilderHRBlock
     ...NeoPageBuilderFormBlock
   }
 }
@@ -21,10 +20,6 @@ fragment NeoPageBuilderBlock on neoPageBuilder_block_BlockType {
 #
 # Level 2
 #
-
-fragment NeoPageBuilderHRBlock on neoPageBuilder_hr_BlockType {
-  id
-}
 
 fragment NeoPageBuilderTwoColumnBlock on neoPageBuilder_twoColumn_BlockType {
   id

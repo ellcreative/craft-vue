@@ -40,7 +40,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: c40d22bf-e52e-472a-a0f6-2a3f363cf0d1
+            fieldUid: c40d22bf-e52e-472a-a0f6-2a3f363cf0d1 # Opt Img Thumbnail
             instructions: null
             label: null
             required: false
