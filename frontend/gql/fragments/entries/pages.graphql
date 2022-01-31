@@ -1,11 +1,12 @@
 #import "../fields/neoPageBuilder.graphql"
+#import "../fields/vizyPageBuilder.graphql"
 
 fragment EntryPageFields on pages_page_Entry {
   neoPageBuilder (level: 1) {
     ...NeoPageBuilderBlock
     ...NeoPageBuilderTwoColumnBlock
   }
-#  TODO: MOVE THIS FRAGMENT WHERE IT BELONGS, IN A FIELDS FRAGMENT FILE
+  # Vizy Lives here because of how its built? ???
   vizyPageBuilder {
     nodes {
       type

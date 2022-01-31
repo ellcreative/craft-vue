@@ -14,9 +14,12 @@ scope:
   - 'globalsets.a8470a16-fdde-49ad-8e54-6f90bea4baf3:read'
   - 'categorygroups.a2642e2b-5271-4169-b2c3-5ee5b5a6426c:read'
   - 'freeformForms.all:read'
+  - 'freeformForms.3cc9be35-f6ad-4bf0-978a-535b0735adcd:read'
   - 'navigationNavs.all:read'
   - 'navigationNavs.21c395ab-0cfe-4302-b582-b40c41f0ce69:read' # Main
   - 'retour.all:read'
   - 'seomatic.all:read'
   - 'formieForms.all:read'
+  - 'formieForms.5eece9b7-05f8-4e81-943d-3bed77134969:read'
   - 'formieSubmissions.all:read'
+  - 'formieSubmissions.5eece9b7-05f8-4e81-943d-3bed77134969:read'
